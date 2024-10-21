@@ -14,7 +14,7 @@ FileSorter is a Python script designed to organize files within a specified dire
   - **Archive Files**: Groups compressed files.
   - **Video Files**: Categorizes video formats.
   - **Audio Files**: Organizes audio files.
-- Can be automated to run periodically using Task Scheduler.
+- Can be automated to run automatically using Task Scheduler.
 
 ## Requirements
 
