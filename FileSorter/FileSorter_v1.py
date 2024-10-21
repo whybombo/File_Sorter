@@ -42,7 +42,7 @@ print("Monitoring Downloads folder for new files...")
 
 try:
     while True:
-        pass  # Keep script running to monitor changes
+        pass  
 except KeyboardInterrupt:
     observer.stop()
 
