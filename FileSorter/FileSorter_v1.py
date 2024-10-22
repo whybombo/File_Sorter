@@ -120,7 +120,7 @@ class FileSorterApp:
 
         try:
             while True:
-                self.root.update()  # Keep updating the UI
+                self.root.update()
         except KeyboardInterrupt:
             self.observer.stop()
             self.observer.join()
