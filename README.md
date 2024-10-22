@@ -2,19 +2,15 @@
 
 ## Description
 
-FileSorter is a Python script designed to organize files within a specified directory into subfolders based on their file extensions. This tool helps keep your files organized by automatically moving them into predefined categories. Unfortunately I can not figure out foldders so if you download a folder it will not be moved (unless its a zip or tar then it works).
+FileSorter is a Python script that organizes files within a specified directory into subfolders based on keywords. This tool helps keep your files organized by automatically moving them into categories defined by user-specified keywords.
 
 ## Features
 
+- Sorts files into a designated documents folder based on keywords the user enters.
+- Allows the input of multiple keywords separated by commas (no spaces).
 - Automatically creates subfolders if they do not already exist.
-- Sorts files into the following categories:
-  - **Code Files**: Includes programming and scripting files.
-  - **Image Files**: Organizes various image formats.
-  - **Text Files**: Sorts text documents and other related file types.
-  - **Archive Files**: Groups compressed files.
-  - **Video Files**: Categorizes video formats.
-  - **Audio Files**: Organizes audio files.
-- Can be automated to run automatically using Task Scheduler.
+- It supports a GUI for selecting downloads and document paths.
+- Includes a quit button to exit the application easily.
 
 ## Requirements
 
@@ -22,6 +18,8 @@ FileSorter is a Python script designed to organize files within a specified dire
 - Libraries:
   - `os`
   - `shutil`
+  - `logging`
+  - `tkinter`
   - `watchdog`
 
 ## Installation
@@ -32,13 +30,19 @@ FileSorter is a Python script designed to organize files within a specified dire
 4. Install the required dependencies:
    ```bash
    pip install watchdog
+   ```
 
 ## Usage
-1. Place the FileSorter.py script in the directory where you want to organize files.
-2. Update the downloads_path and documents_path variables in the script to point to your respective folders.
-3. Run the script using Python:
-  '''bash
-python FileSorter.py
+
+1. Place the `FileSorter.py` script in the directory where you want to organize files.
+2. Run the script using Python:
+   ```bash
+   python FileSorter.py
+   ```
+3. In the GUI, specify the Downloads and Documents paths.
+4. Enter keywords (separated by commas) for sorting.
+5. Click **Start Sorting** to begin organizing files based on the specified keywords.
+6. Click **Quit** to exit the application.
 
 ## Automation (Windows Task Scheduler)
 
@@ -46,7 +50,7 @@ To automate the script using Windows Task Scheduler:
 
 ### Open Task Scheduler:
 
-- Press `Win + R` and type `taskschd.msc`, then press Enter.
+- Press `Win + R`, type `taskschd.msc`, then press Enter.
 
 ### Create a Basic Task:
 
@@ -59,11 +63,10 @@ To automate the script using Windows Task Scheduler:
 1. Select **Start a program**.
 2. Browse to the Python executable (e.g., `python.exe`).
 3. In the **Add arguments** field, enter the path to your script, e.g.:
-
    ```bash
-   C:\path\to\FileSorter.py
+   C:\path\to\FileSorter_v1.py
+   ```
 
 ## Customization
 
-- Modify the folder_paths dictionary in the script to add more file categories or change the file extensions associated with each category.
-
+- Modify the `folder_paths` dictionary in the script to add more file categories or change the keywords associated with each category.
