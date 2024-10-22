@@ -66,6 +66,8 @@ To automate the script using Windows Task Scheduler:
    ```bash
    C:\path\to\FileSorter_v1.py
    ```
+![image](https://github.com/user-attachments/assets/6ba86760-7df3-489d-ad8a-c884cc02bc63)
+
 
 ## Customization
 
