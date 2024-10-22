@@ -2,7 +2,7 @@
 
 ## Description
 
-FileSorter is a Python script that organizes files within a specified directory into subfolders based on keywords. This tool helps keep your files organized by automatically moving them into categories defined by user-specified keywords.
+FileSorter is a Python script that organizes files within a specified directory into subfolders based on keywords. If you are looking for a more automatic approach, this tool helps keep your files organized by automatically moving them into pre-defined folders using Task Scheduler once a file is downloaded.
 
 ## Features
 
