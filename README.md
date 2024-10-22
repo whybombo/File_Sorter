@@ -44,7 +44,7 @@ FileSorter is a Python script that organizes files within a specified directory 
 5. Click **Start Sorting** to begin organizing files based on the specified keywords.
 6. Click **Quit** to exit the application.
 
-## Automation (Windows Task Scheduler)
+## Automation ONLY for file extension and predetermined files - will be created automatically(Windows Task Scheduler)
 
 To automate the script using Windows Task Scheduler:
 
